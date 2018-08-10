@@ -41,6 +41,8 @@ curl -X "POST" "http://localhost:8080/login" \
      -d $'{}'
 ```
 
+returns `token`
+
 ## Get protected data
 
 ### i-me
