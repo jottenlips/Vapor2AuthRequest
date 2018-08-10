@@ -41,7 +41,7 @@ curl -X "POST" "http://localhost:8080/login" \
      -d $'{}'
 ```
 
-returns `token`
+returns `token` to be used for protected routes.
 
 ## Get protected data
 
