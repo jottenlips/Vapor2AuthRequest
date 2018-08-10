@@ -13,6 +13,19 @@ https://github.com/vapor/auth-template
 ```
 vapor new hello --auth
 ```
+```
+cd hello
+```
+```
+vapor build
+```
+```
+vapor run
+``` 
+or
+```
+vapor xcode
+```
 
 ## Create user
 
