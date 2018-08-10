@@ -16,7 +16,7 @@ vapor new hello --auth
 
 ## Create user
 
-### i-register
+### register
 
 ```
 ## i-register
@@ -32,7 +32,7 @@ curl -X "POST" "http://localhost:8080/users" \
 
 ## Login
 
-### i-login
+### login
 
 ```
 curl -X "POST" "http://localhost:8080/login" \
@@ -45,7 +45,7 @@ returns `token` to be used for protected routes.
 
 ## Get protected data
 
-### i-me
+### me
 
 ```
 curl "http://localhost:8080/me?" \
