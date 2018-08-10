@@ -19,11 +19,15 @@ vapor new hello --auth
 ### i-register
 
 ```
+## i-register
 curl -X "POST" "http://localhost:8080/users" \
-     -H 'Content-Type: multipart/form-data; charset=utf-8; boundary=__X_PAW_BOUNDARY__' \
-     -F "email=" \
-     -F "password=" \
-     -F "name="
+     -H 'Content-Type: application/json; charset=utf-8' \
+     -d $'{
+  "name": "",
+  "email": "",
+  "password": ""
+}'
+
 ```
 
 ## Login
