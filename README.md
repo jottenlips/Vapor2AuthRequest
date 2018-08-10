@@ -11,24 +11,42 @@ brew install vapor/tap/vapor
 ```
 vapor new hello --auth
 ```
+
 ## Create user
 
-json body
+### i-register
 
-{"email":"","password":"","name":""}
+```
+curl -X "POST" "http://localhost:8080/users" \
+     -H 'Content-Type: multipart/form-data; charset=utf-8; boundary=__X_PAW_BOUNDARY__' \
+     -F "email=johno@aloompa.com" \
+     -F "password=john" \
+     -F "name=john"
+```
 
 ## Login
 
-Auth 
+### i-login
 
-Basic Auth
-
-Username
-
-Password
+```
+curl -X "POST" "http://localhost:8080/login" \
+     -H 'Content-Type: application/json; charset=utf-8' \
+     -u 'johno@aloompa.com:john' \
+     -d $'{
+  "email": "johno1@aloompa.com",
+  "id": "1",
+  "password": "john",
+  "name": "john"
+}'
+```
 
 ## Get protected data
 
-Headers
+### i-me
 
-Authorization: Bearer inserttokenhere
+```
+curl "http://localhost:8080/me?token=%2BP6ni9TkzoCSkxepU%2FDH5Q%3D%3D" \
+     -H 'Authorization: Bearer tVhHQc4+L+59escVr0P4PQ==' \
+     -H 'Content-Type: application/json; charset=utf-8' \
+     -d $'{}'
+```
