@@ -8,7 +8,11 @@ brew install vapor/tap/vapor
 
 ### Make a new vapor authenticated api
 
-https://github.com/vapor/auth-template
+`clone` 
+
+https://github.com/jottenlips/i
+
+Or with vapor 2 template
 
 ```
 vapor new hello --auth
@@ -16,6 +20,9 @@ vapor new hello --auth
 ```
 cd hello
 ```
+
+then
+
 ```
 vapor build
 ```
