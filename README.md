@@ -8,7 +8,7 @@ brew install vapor/tap/vapor
 
 ### Make a new vapor authenticated api
 
-`clone` 
+`git clone` 
 
 https://github.com/jottenlips/i
 
