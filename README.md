@@ -1,4 +1,4 @@
-# Example requests for Vapor 3 Auth Api template
+# Example requests for Vapor 2 Auth Api template
 ## Make a new template
 ### Install vapor using brew
 
