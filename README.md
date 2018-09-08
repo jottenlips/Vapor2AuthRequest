@@ -1,4 +1,4 @@
-# Example requests for Vapor 2 Auth Api template
+# Example requests for Vapor Auth Api template
 ## Make a new template
 ### Install vapor using brew
 
@@ -34,10 +34,7 @@ vapor xcode
 
 ## Create user # VAPOR 3
 
-### register
-
 ```
-## i-register
 curl -X "POST" "http://localhost:8080/users" \
      -H 'Content-Type: application/json; charset=utf-8' \
      -d $'{
@@ -50,8 +47,6 @@ curl -X "POST" "http://localhost:8080/users" \
 ```
 
 ## Login
-
-### login
 
 ```
 curl -X "POST" "http://localhost:8080/login" \
@@ -84,14 +79,12 @@ curl -X "POST" "http://localhost:8080/todos" \
 }'
 ```
 ### delete todo
-
 ```
 curl -X "DELETE" "http://localhost:8080/todos/1" \
      -H 'Authorization: Bearer 0BMDp6YeOuH0qYYrXInDhA==' \
      -H 'Content-Type: application/json; charset=utf-8' \
      -d $'{}'
 ```
-
 
 ## Create user # VAPOR 2
 
