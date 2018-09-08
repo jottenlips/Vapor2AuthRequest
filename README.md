@@ -1,4 +1,4 @@
-# Example requests for Vapor 3 Auth Api template
+# Example requests for Vapor 2 Auth Api template
 ## Make a new template
 ### Install vapor using brew
 
@@ -8,7 +8,9 @@ brew install vapor/tap/vapor
 
 ### Make a new vapor authenticated api
 
-https://github.com/vapor/auth-template
+`git clone` 
+
+https://github.com/jottenlips/i
 
 ```
 vapor new hello --auth
@@ -16,6 +18,9 @@ vapor new hello --auth
 ```
 cd hello
 ```
+
+then
+
 ```
 vapor build
 ```
@@ -27,7 +32,68 @@ or
 vapor xcode
 ```
 
-## Create user
+## Create user # VAPOR 3
+
+### register
+
+```
+## i-register
+curl -X "POST" "http://localhost:8080/users" \
+     -H 'Content-Type: application/json; charset=utf-8' \
+     -d $'{
+  "name": "",
+  "email": "",
+  "password": "",
+  "verifyPassword = ""
+}'
+
+```
+
+## Login
+
+### login
+
+```
+curl -X "POST" "http://localhost:8080/login" \
+     -H 'Content-Type: application/json; charset=utf-8' \
+     -u 'myemail:mypassord' \
+     -d $'{}'
+```
+
+returns `token` to be used for protected routes.
+
+## Todo object
+
+### get todo
+
+```
+curl "http://localhost:8080/todos?" \
+     -H 'Authorization: Bearer mytokenhere' \
+     -H 'Content-Type: application/json; charset=utf-8' \
+     -d $'{}'
+```
+
+### post todo
+
+```
+curl -X "POST" "http://localhost:8080/todos" \
+     -H 'Authorization: Bearer 0BMDp6YeOuH0qYYrXInDhA==' \
+     -H 'Content-Type: application/json; charset=utf-8' \
+     -d $'{
+  "title": "Do the dishes"
+}'
+```
+### delete todo
+
+```
+curl -X "DELETE" "http://localhost:8080/todos/1" \
+     -H 'Authorization: Bearer 0BMDp6YeOuH0qYYrXInDhA==' \
+     -H 'Content-Type: application/json; charset=utf-8' \
+     -d $'{}'
+```
+
+
+## Create user # VAPOR 2
 
 ### register
 
