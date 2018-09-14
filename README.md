@@ -8,6 +8,8 @@ brew install vapor/tap/vapor
 
 ### Make a new vapor authenticated api
 
+https://docs.vapor.codes/3.0/auth/getting-started/
+
 ```
 vapor new hello --auth
 ```
