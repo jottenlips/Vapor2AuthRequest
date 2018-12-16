@@ -2,9 +2,7 @@
 ## Make a new template
 ### Install vapor using brew
 
-```
-brew install vapor/tap/vapor
-```
+`brew install vapor/tap/vapor`
 
 ### Make a new vapor authenticated api
 
